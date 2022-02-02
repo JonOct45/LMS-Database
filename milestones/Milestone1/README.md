@@ -9,9 +9,6 @@ by technical and non-technical people and teams (i,e CEO, CTO, Project Managers,
 This page must contain the title of your project (i.e Library Management System ), your name, student id and GitHub  username, and finally, a version history table similar 
 to the one in the below:
 
-| Milestone/Version |    Date    |
-| ----------------- | ---------- |
-|       M1V1        | 06/07/2020 |
 
 ## Table of Contents
 
@@ -61,21 +58,7 @@ Quantifiable entities are defined by the many, one or zero quantities.
 Database requirements must be enumerated and grouped by the entity that performs the action 
 so later they are easy to find in the document. 
 
-Example of database requirements extracted from our use case example given in section II: 
 
-    1. User 
-        1.1. A user shall create only one account 
-        1.2. A user shall be able to rent multiple books at once before checking out
-        1.3. A user shall have at least one role.
-
-    2. Account 
-        2.1. An account shall be created by only one user. 
-    
-    3. Role
-        3.1 A role shall be linked to many users. 
-    
-    4. Book
-        4.1 A book can be rented by multiple users
 
 Database requirements listed in this section must cover ALL the following relationships:
 
@@ -91,31 +74,7 @@ Database requirements listed in this section must cover ALL the following relati
 
 ## Section IV: Detailed List of Main Entities, Attributes and Keys 
 
-***Note: In this section, students must create at least 16 strong entities, and each entity must have 
-at least three or more attributes. Failure to meet those guidelines will result in your milestone being returned with
-a grade reduction.***
 
-In this section, you must describe entities and their attributes for your database system, including keys and 
-attributes details (data type and form). For example using our two business rules from section III. A good list would be:
-
-      1. User (Strong)
-          * user_id: key, numeric 
-          * name: composite, alphanumeric
-          * dob: multivalue, timestamp
-          
-      2. Book (Strong)
-          * ISBM: key, alphanumeric
-          * title: composite, alphanumeric
-          * author: composite, alphanumeric
-      
-      3. Role (Strong)
-          * role_id: key, numeric
-          * description: alphanumeric
-      
-      3. Account (Weak)
-          * id: key, numeric 
-          * user: key, numeric 
-          * role: key, numeric
           
 
 
